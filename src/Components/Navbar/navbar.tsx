@@ -1,4 +1,4 @@
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import cart from "../../assets/Images/shopping-cart.png";
 import { useSelector } from "react-redux";

@@ -40,7 +40,7 @@ const Cart = () => {
                 <button className="border-0" onClick={() => dispatch(INCREMENT(product.id))}> + </button>
                 </td>
               <td>Rs.{product.price * product.count}</td>
-              <td><button className="bg-danger text-white border-0 p-1 pointer">X</button></td>
+              <td><button className="bg-danger text-white border-0 p-1 pointer" onClick={() => dispatch(DELETE(product.id))}>X</button></td>
             </tr>
           ))}
         </tbody>
@@ -55,26 +55,4 @@ const Cart = () => {
   );
 };
 
-{
-  /* <table>
-        <thead>
-          <tr>
-            <td>Product</td>
-            <td>Quantity</td>
-            <td>Price</td>
-            <td>X</td>
-          </tr>
-        </thead>
-        <tbody>
-          {addedProducts.map((product: productStateType, i: number) => (
-            <tr key={i}>
-              <td>{product.shoeName}</td>
-              <td>{product.count}</td>
-              <td>{product.price}</td>
-              <td>X</td>
-            </tr>
-          ))}
-        </tbody>
-      </table> */
-}
 export default Cart;
