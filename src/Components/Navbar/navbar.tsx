@@ -29,8 +29,8 @@ const NavigationBar = () => {
         <Nav>
           <Nav.Item className="text-white">
             <Link to="/cart">
-            <div style={{ backgroundColor: "white", borderRadius: "9999px", padding: "0.75rem" }}>
-              <img src={cart} alt="cartImage" style={{ width: "2rem", height: "2rem", }} /><sup style={{ verticalAlign: "super",  }}><span style={{ backgroundColor: "#16f5f5", borderRadius: "9999px", color: "white", padding: "4px"}}>{totalProducts}</span></sup>
+            <div style={{ backgroundColor: "rgba(33,37,41,1)", borderRadius: "9999px", padding: "0.75rem" }}>
+              <img src={cart} alt="cartImage" style={{ width: "2.5rem", height: "2.5rem", }} /><sup style={{ verticalAlign: "super",  }}><span style={{ backgroundColor: "#16f5f5", borderRadius: "9999px", color: "white", padding: "4px"}}>{totalProducts}</span></sup>
             </div>
             </Link>
           </Nav.Item>
